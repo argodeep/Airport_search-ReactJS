@@ -3,13 +3,12 @@ import axios from 'axios';
 
 function aiportSearch() {
     return (dispatch) => {
-      axios.get('https://res.cloudinary.com/dfxnlms6d/raw/upload/v1564822945/airport_tcsji6.json')
+      axios.get('https://argodeep.github.io/React-Redux-Hooks-with-axios-redux-thunk/master/public/airport.json')
         .then(response => {
           dispatch(getAirports(response.data))
         })
         .catch(error => {
-            let data = []
-            dispatch(getAirports(data))
+            throw(error);
         });
     };
 }

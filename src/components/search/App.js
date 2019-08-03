@@ -33,7 +33,7 @@ function App() {
     setLoading(false);
   }
   let changeTitle = () => {
-    document.title = `Searched Airport - ${airport.name}`;
+    document.title = `Searched Airport - ${airport.airport}`;
   }
   let searchAirports = debounce(500, (input) => {
     let data = results.data;
