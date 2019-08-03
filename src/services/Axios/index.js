@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function aiportSearch() {
     return (dispatch) => {
-      axios.get('https://argodeep.github.io/React-Redux-Hooks-with-axios-redux-thunk/master/public/airport.json')
+      axios.get('https://argodeep.github.io/React-Redux-Hooks-with-axios-redux-thunk/airport.json')
         .then(response => {
           dispatch(getAirports(response.data))
         })

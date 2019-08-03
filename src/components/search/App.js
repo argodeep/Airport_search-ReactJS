@@ -19,8 +19,10 @@ function App() {
     if (!results.data) {
       fetch();
     } else {
-      fetched();
-    }
+      if (results.data.length > 0) {
+        fetched();
+      }
+    }   
     if (airport.city !== undefined) {
       changeTitle();
     }
