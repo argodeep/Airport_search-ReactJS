@@ -1,16 +1,17 @@
 {
-  "name": "my-app",
+  "name": "redux-async-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0-rc.1",
-    "react-scripts": "3.0.1",
-    "redux": "^4.0.0-rc.1",
+    "axios": "^0.19.2",
+    "cra-template": "1.0.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "throttle-debounce": "^2.1.0"
+    "throttle-debounce": "^2.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -22,7 +22,7 @@ function App() {
       if (results.data.length > 0) {
         fetched();
       }
-    }   
+    }
     if (airport.city !== undefined) {
       changeTitle();
     }
@@ -38,7 +38,8 @@ function App() {
     document.title = `Searched Airport - ${airport.airport}`;
   }
   let searchAirports = debounce(500, (input) => {
-    let data = results.data;
+    setSelected(false);
+    let data = [...results.data];
     if (input.length > 1) {
       setAirports(data.filter(e => e.airport.toLowerCase().includes(input.toLowerCase()) || e.city.toLowerCase().includes(input.toLowerCase()) || e.iata.toLowerCase().includes(input.toLowerCase())));
       setResult(true);
@@ -105,6 +106,10 @@ function App() {
               </div>
             </div>
           ))
+          }
+          {
+            selected === false && resultAvailable === true && airports.length === 0 &&
+            <p style={{ textAlign: 'center' }}>No Result Found</p>
           }
         </div>
       }
