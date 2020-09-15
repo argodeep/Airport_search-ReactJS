@@ -1,5 +1,5 @@
-# React-Redux-Hooks-with-axios-middleware
-This project shows react &amp; redux hooks with Axios. Also show implementation of middleware logic.
+# React Hooks (Redux,Thunk, Axios)
+Simple airport search app - Built using react-hooks, redux, redux-thunk middleware, Axios, Functional Component.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
