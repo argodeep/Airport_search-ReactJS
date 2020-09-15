@@ -2,7 +2,7 @@
   "name": "redux-async-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://argodeep.github.io/React-Redux-Hooks-with-axios-redux-thunk/",
+  "homepage": "https://argodeep.github.io/React-Hooks-with-redux-thunk/",
   "dependencies": {
     "axios": "^0.19.2",
     "react": "^16.13.1",
