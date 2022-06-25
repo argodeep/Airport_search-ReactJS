@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function aiportSearch() {
   return (dispatch) => {
-    axios.get(window.location.origin + '/' + window.location.pathname.split('/')[1] + '/airport.json')
+    axios.get(window.location.origin  + '/airport.json')
       .then(response => {
         dispatch(getAirports(response.data))
       })
